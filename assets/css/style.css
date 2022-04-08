@@ -3,6 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.buynow-button {
+    color: #fff;
+    font-size: 13.5px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+.learn-more {
+    padding: 15px 50px;
+    border: 1px solid #560238;
+    border-radius: 25px;
+    background-color: #560238;
+    -webkit-transition: background-color 200ms ease, color 200ms ease;
+    transition: background-color 200ms ease, color 200ms ease;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 15px;
+}
+img {
+    max-width: 100%;
+}
 /******header start******/
 
 header{
@@ -88,6 +120,11 @@ header{
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
+.slider-content h1 {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 45px;
+    line-height: 55px;
+}
 .slider-content a.buy-now {
     color: #fff;
     font-size: 13.5px;
@@ -100,3 +137,55 @@ header{
 }
 
 /******Hero secrtion end */
+.about-section {
+    padding: 100px 0;
+}
+.about-section .richtext-inner h5 {
+    margin-bottom: 10px;
+    color: #560238;
+    font-size: 13.5px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.about-section .richtext-inner p {
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: #560238;
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 500;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.about-card .card-image img {
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
+}
+.about-card .card-image img:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.about-card .card-info {
+    /* padding: 23px; */
+    background-color: #9f2c75;
+}
+.info-inner h3 {
+    transition: opacity 200ms ease;
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.info-inner a {
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: #fff;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
+}
