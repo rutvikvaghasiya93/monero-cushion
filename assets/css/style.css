@@ -7,8 +7,7 @@
 
 header{
     position: relative;
-    border-top: 5px solid #b08ead;   
-    /* max-width: 1265px; */
+    border-top: 4px solid #9f2c75;
 }
 
 .navbar-brand img{
@@ -33,7 +32,6 @@ header{
     position: relative;
     height: auto;
     padding:72px 0;
-    /* background-color: aliceblue; */
 }
 .hero_section::before{
     content: "";
@@ -42,7 +40,7 @@ header{
     left: 0;
     right: 0;
     height: 50%;
-    background-color: #b08ead;
+    background-color: #d281b5;
 }
 .hero_section::after{
     content: "";
@@ -51,7 +49,7 @@ header{
     left: 0;
     right: 0;
     height: 50%;
-    background-color: #d6bbd3;
+    background-color: #9f2c75;
 }
 .hero_img{
     position: relative;
@@ -61,23 +59,21 @@ header{
     max-width: 800px;
     min-height: 625px;
 }
-.hero_flex{
-    display: flex;
-    position: relative;
+.hero_banner{
     z-index: 999;
 }
 .side_text_box{
     display: flex;
-    width: 35%;
-    height: 450px;
+    width: 440px;
+    min-height: 450px;
     max-width: 440px;
     justify-content: center;
     align-items: flex-start;
-    background: #b08ead;
+    background: #560238;
     flex-direction: column;
     margin-left: -150px;
     position: relative;
-    margin-top: 101px;
+    /* margin-top: 101px; */
     z-index: 100;
     color: #fff;
     padding-right: 40px;
@@ -86,12 +82,21 @@ header{
 .side_text_box .mini_title{
     margin-bottom: 10px;
     font-family: Roboto, sans-serif;
-    color: #b99bb6;
+    color: #fff;
     font-size: 13.5px;
     font-weight: 700;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
-
+.slider-content a.buy-now {
+    color: #fff;
+    font-size: 13.5px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
 
 /******Hero secrtion end */
