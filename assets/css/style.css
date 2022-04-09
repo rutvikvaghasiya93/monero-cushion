@@ -189,3 +189,22 @@ header{
     font-weight: 600;
     text-decoration: none;
 }
+/*****cushion design section start ****/
+.design_section{
+    background-color: #b08ead;
+    padding:72px 0;
+}
+.design_section.design_content.design_banner.design_img{
+    position: relative;
+}
+.design_section.design_content  .design_banner{
+    z-index: 99;
+}
+.design_section.aboutme-section .side_text_box {
+    margin-right: -150px;
+    margin-left: 0;
+}
+.design_section.aboutme-section .design_img {
+    width: 50%;
+}
+/****cushion design-section end***/
