@@ -2,6 +2,9 @@
     section.hero_section .hero-banner-slider .hero_banner .hero_img{
         width: 65%;
     }
+    footer .footer-link .nav a.nav-link {
+        margin-right: 15px;
+    }
 }
 @media screen and (max-width:991px) {
     .navbar .navbar-nav .nav-item .nav-link{
@@ -19,34 +22,86 @@
         min-height: auto;
     }
     .side_text_box{
-    width: 100%;
-    min-height: auto;
-    max-width: 100%;
-    margin-left: 0;
-    padding: 40px 30px;
-}
-.design_section.aboutme-section .design_img {
-    width: 100%;
-}
-.design_section.aboutme-section .design_img img{
-    max-width: 100%;
-    min-height: auto;
-}
-section.design_section.aboutme-section.aboutme-second .design_content .design_banner {
-    justify-content: flex-end !important;
+        width: 100%;
+        min-height: auto;
+        max-width: 100%;
+        margin-left: 0;
+        padding: 40px 30px;
+    }
+    .design_section.aboutme-section .design_img {
+        width: 100%;
+    }
+    .design_section.aboutme-section .design_img img{
+        max-width: 100%;
+        min-height: auto;
+    }
+    section.design_section.aboutme-section.aboutme-second .design_content .design_banner {
+        justify-content: flex-end !important;
 
+    }
+    .single-text-with-image:nth-child(even) .right-side-content {
+        order: 2;
+    }
+    .single-text-with-image:nth-child(even) .left-side-image {
+        order: 1;
+    }
+    .single-text-with-image:nth-child(even) .left-side-image .single-image{
+        margin: 0 0 0;
+    }
+    section.design_section.aboutme-section:nth-child(even) .side_text_box{
+        order: 1;
+    }
+    .contact-main .contact-form-main {
+        padding: 50px 40px;
+    }
+    .contact-main .contact-form-main .left-contact-detail {
+        order: 2;
+    }
+    .contact-main .contact-form-main .right-contact-form {
+        order: 1;
+        margin-bottom: 40px;
+    }
+    .contact-form .row {
+        margin: 0!important;
+    }
+    .contact-form .contact-field {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 0 20px;
+    }
+    footer .footer-logo-wrapper {
+        text-align: center;
+    } 
+    .footer-menu-wrapper {
+        padding: 20px 0;
+    }
+    .footer-menu-wrapper .nav {
+        justify-content: center;
+    }
+    .footer-social-wrapper > div {
+        justify-content: center !important;
+    }
+    footer .footer-notice .footer-notice-text {
+        text-align: center;
+    }
+    .navbar .navbar-nav .nav-item {
+        padding: 13px 0;
+    }
+    .navbar .navbar-nav .nav-item .nav-link {
+        padding: 0;
+    }
 }
-.single-text-with-image:nth-child(even) .right-side-content {
-    order: 2;
-}
-.single-text-with-image:nth-child(even) .left-side-image {
-    order: 1;
-}
-.single-text-with-image:nth-child(even) .left-side-image .single-image{
-    margin: 0 0 0;
-}
-section.design_section.aboutme-section:nth-child(even) .side_text_box{
-    order: 1;
-}
-
+@media screen and (max-width: 480px) {
+    .newsletter-main .input-group input.form-control, .newsletter-main .input-group button.btn {
+        width: 100%;
+        border-radius: 40px !important;
+        margin-bottom: 10px;
+    }
+    footer .footer-link .nav a.nav-link {
+        margin-right: 0;
+    }
+    .contact-main .contact-form-main {
+        padding: 40px 10px 20px;
+    }
 }
