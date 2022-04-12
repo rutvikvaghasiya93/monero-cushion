@@ -1,187 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monero</title>
+    <!-- Bootatrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawsome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Monero</title>
-  <!-- Bootatrap Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Google fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <!-- Fontawsome Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Custome Css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-  <!-- Custome Css -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+  <body>
+    <!-------Header start------->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="logo" class="img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact me</a>
+              </li>
 
-<body>
-  <!-------Header start------->
-  <header>
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/logo.png" alt="logo" class="img-fluid" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact me</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link cart_btn" href="#"><img src="assets/images/cart.png" class="nav_cart" alt="cart" /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-------header End------->
-  <!-------Hero section start -->
-  <section class="hero_section">
-    <div class="hero_content container">
-      <div class="hero-banner-slider">
-        <div class="hero_banner d-flex flex-wrap position-relative justify-content-center align-items-center">
-          <div class="hero_img">
-            <img src="assets/images/bg1.jpg" alt="" />
+              <li class="nav-item">
+                <a class="nav-link cart_btn" href="#"
+                  ><img
+                    src="assets/images/cart.png"
+                    class="nav_cart"
+                    alt="cart"
+                /></a>
+              </li>
+            </ul>
           </div>
-          <div class="side_text_box">
-            <div class="slider-content">
-
-              <div class="mini_title">New</div>
-              <h1> Spring Cushionv <br /> Collection 2019 </h1>
-              <a href="#" class="buy-now buynow-button"> Buy Now</a>
+        </div>
+      </nav>
+    </header>
+    <!-------header End------->
+    <!-------Hero section start -->
+    <section class="hero_section padding-t-b">
+      <div class="hero_content c ontainer">
+        <div class="hero-banner-slider">
+          <div
+            class="hero_banner d-flex flex-wrap position-relative justify-content-center align-items-center"
+          >
+            <div class="hero_img">
+              <img src="assets/images/bg1.jpg" alt="" />
+            </div>
+            <div class="side_text_box">
+              <div class="slider-content">
+                <div class="mini_title">New</div>
+                <h1>
+                  Spring Cushionv <br />
+                  Collection 2019
+                </h1>
+                <a href="#" class="buy-now buynow-button"> Buy Now</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-------Hero section end -->
-  <section class="about-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="richtext-section mb-5">
-            <div class="richtext-inner text-center">
-              <h5>I'M A CUSHION DESIGNER</h5>
-              <p class="py-4">Based in San Francisco, California I design trendy and fashion Cushions, since I have
-                memory I always had a tendency to design and illustration.</p>
+    <!-------Hero section end -->
+    <section class="about-section padding-t-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="richtext-section mb-5">
+              <div class="richtext-inner text-center">
+                <h5>I'M A CUSHION DESIGNER</h5>
+                <p class="py-4">
+                  Based in San Francisco, California I design trendy and fashion
+                  Cushions, since I have memory I always had a tendency to
+                  design and illustration.
+                </p>
+                <a href="#" class="learn-more">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4 col-md-4 col-sm-6">
+            <div class="about-card">
+              <div class="single-card">
+                <div class="card-image overflow-hidden">
+                  <img src="assets/images/card-1.png" alt="" />
+                </div>
+                <div class="card-info p-4">
+                  <div class="info-inner">
+                    <h3>About me</h3>
+                    <a href="javascript:;" class="card-link">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4 col-sm-6">
+            <div class="about-card">
+              <div class="single-card">
+                <div class="card-image overflow-hidden">
+                  <img src="assets/images/card-2.png" alt="" />
+                </div>
+                <div class="card-info p-4">
+                  <div class="info-inner">
+                    <h3>About me</h3>
+                    <a href="javascript:;" class="card-link">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4 col-sm-6">
+            <div class="about-card">
+              <div class="single-card">
+                <div class="card-image overflow-hidden">
+                  <img src="assets/images/card-3.png" alt="" />
+                </div>
+                <div class="card-info p-4">
+                  <div class="info-inner">
+                    <h3>About me</h3>
+                    <a href="javascript:;" class="card-link">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----cushion design section ---->
+    <section class="design_section aboutme-section padding-t-b">
+      <div class="design_content container">
+        <div
+          class="design_banner d-flex flex-wrap position-relative justify-content-center align-items-center"
+        >
+          <div class="side_text_box">
+            <div class="slider-content">
+              <div class="mini_title">ABOUT ME</div>
+              <h1>
+                I'm a trendy <br />
+                Cushion Designer
+              </h1>
+              <a href="" class="buy-now">LEAR MORE</a>
+            </div>
+          </div>
+          <div class="design_img">
+            <img src="assets/images/about-image.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----cushion design end----->
+    <!---Demo section -->
+    <section class="text-with-image padding-t-b">
+      <div class="container">
+        <div class="row single-text-with-image">
+          <div class="col-lg-6 left-side-image">
+            <div class="single-image">
+              <img src="assets/images/demo_1.jpg" alt="" />
+            </div>
+          </div>
+          <div
+            class="col-lg-6 d-flex justify-content-center align-items-center right-side-content"
+          >
+            <div class="single-text">
+              <h4>beginnings</h4>
+              <p>
+                Credibly innovate granular internal or organic sources whereas
+                high standards in web-readiness. Energistically scale
+                future-proof core competencies vis-a-vis impactful experiences.
+              </p>
+              <p>
+                Dramatically synthesize integrated schemas. with optimal
+                networks.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row single-text-with-image">
+          <div class="col-lg-6 left-side-image">
+            <div class="single-image">
+              <img src="assets/images/demo_2.jpg" alt="" />
+            </div>
+          </div>
+          <div
+            class="col-lg-6 d-flex justify-content-center align-items-center right-side-content"
+          >
+            <div class="single-text">
+              <h4>carrer</h4>
+              <p>
+                Collaboratively administrate turnkey channels whereas virtual
+                e-tailers.
+              </p>
+              <p>
+                Objectively seize scalable metrics whereas proactive e-services
+                seamlessly empower fully researched growth strategies.
+              </p>
+              <p>And interoperable internal or “organic” sources.</p>
               <a href="#" class="learn-more">Learn more</a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-lg-4 col-md-4 col-sm-6">
-          <div class="about-card">
-            <div class="single-card">
-              <div class="card-image overflow-hidden">
-                <img src="assets/images/card-1.png" alt="">
-              </div>
-              <div class="card-info p-4 ">
-                <div class="info-inner">
-                  <h3>About me</h3>
-                  <a href="javascript:;" class="card-link">Learn more</a>
-                </div>
-              </div>
+        <div class="row single-text-with-image">
+          <div class="col-lg-6 left-side-image">
+            <div class="single-image">
+              <img src="assets/images/demo_1.jpg" alt="" />
             </div>
           </div>
-        </div>
-        <div class="col-12 col-lg-4 col-md-4 col-sm-6">
-          <div class="about-card">
-            <div class="single-card">
-              <div class="card-image overflow-hidden">
-                <img src="assets/images/card-2.png" alt="">
-              </div>
-              <div class="card-info p-4">
-                <div class="info-inner">
-                  <h3>About me</h3>
-                  <a href="javascript:;" class="card-link">Learn more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4 col-md-4 col-sm-6">
-          <div class="about-card">
-            <div class="single-card">
-              <div class="card-image overflow-hidden">
-                <img src="assets/images/card-3.png" alt="">
-              </div>
-              <div class="card-info p-4">
-                <div class="info-inner">
-                  <h3>About me</h3>
-                  <a href="javascript:;" class="card-link">Learn more</a>
-                </div>
-              </div>
+          <div
+            class="col-lg-6 d-flex justify-content-center align-items-center right-side-content"
+          >
+            <div class="single-text">
+              <h4>products</h4>
+              <p>
+                Seamlessly empower fully researched growth strategies and
+                interoperable internal or “organic” sources.
+              </p>
+              <p>
+                Credibly innovate granular internal or “organic” sources whereas
+                high standards in web-readiness.
+              </p>
+              <p>Energistically scale future-proof core competence</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-----cushion design section ---->
-  <section class="design_section aboutme-section">
-    <div class="design_content container">
-      <div class="design_banner d-flex flex-wrap position-relative justify-content-center align-items-center">
-        <div class="side_text_box">
-          <div class="slider-content">
-            <div class="mini_title">ABOUT ME</div>
-            <h1>I'm a trendy <br> Cushion Designer</h1>
-            <a href="" class="buy-now">LEAR MORE</a>
-          </div>
-        </div>
-        <div class="design_img">
-          <img src="assets/images/about-image.png"  alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-----cushion design end----->
-  <!---Demo section -->
-  <section class="demo_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="demo_text">
-            <h4>beginnings</h4>
-            <p>Credibly innovate granular internal or organic sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences.</p>
-            <p>Dramatically synthesize integrated schemas. with optimal networks.</p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="demo_img">
-            <img src="assets/images/demo_1.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Bootsatrap bundlen js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    </section>
+    <!--------spring cushion start-------->
 
+    <section class="design_section aboutme-section aboutme-second padding-t-b">
+      <div class="design_content container">
+        <div
+          class="design_banner d-flex flex-wrap position-relative justify-content-center align-items-center"
+        >
+          <div class="design_img">
+            <img src="assets/images/card-2.jpg" alt="" />
+          </div>
+          <div class="side_text_box">
+            <div class="slider-content">
+              <div class="mini_title">ABOUT ME</div>
+              <h1>
+                I'm a trendy <br />
+                Cushion Designer
+              </h1>
+              <a href="" class="buy-now">LEAR MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------spring cushion end-------->
+
+    <!-------Product section start------->
+    <section class="product-main padding-t-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="product-card">
+              <div class="product-single-card overflow-hidden">
+                <img src="assets/images/p-1.jpg" alt="" />
+              </div>
+              <div class="product-card-text text-center pt-2">
+                <p class="m-0"><a href="#"> Plated Cushion</a></p>
+                <p class="m-0"><a href="#" class="price">$ 19.99 USD</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="product-card">
+              <div class="product-single-card overflow-hidden">
+                <img src="assets/images/p-2.jpg" alt="" />
+              </div>
+              <div class="product-card-text text-center pt-2">
+                <p class="m-0"><a href="#"> Plated Cushion</a></p>
+                <p class="m-0"><a href="#" class="price">$ 19.99 USD</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="product-card">
+              <div class="product-single-card overflow-hidden">
+                <img src="assets/images/p-3.jpg" alt="" />
+              </div>
+              <div class="product-card-text text-center pt-2">
+                <p class="m-0"><a href="#"> Plated Cushion</a></p>
+                <p class="m-0"><a href="#" class="price">$ 19.99 USD</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="product-card">
+              <div class="product-single-card overflow-hidden">
+                <img src="assets/images/p-4.jpg" alt="" />
+              </div>
+              <div class="product-card-text text-center pt-2">
+                <p class="m-0"><a href="#"> Plated Cushion</a></p>
+                <p class="m-0"><a href="#" class="price">$ 19.99 USD</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="product-card">
+              <div class="product-single-card overflow-hidden">
+                <img src="assets/images/p-5.jpg" alt="" />
+              </div>
+              <div class="product-card-text text-center pt-2">
+                <p class="m-0"><a href="#"> Plated Cushion</a></p>
+                <p class="m-0"><a href="#" class="price">$ 19.99 USD</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="product-card">
+              <div class="product-single-card overflow-hidden">
+                <img src="assets/images/p-6.jpg" alt="" />
+              </div>
+              <div class="product-card-text text-center pt-2">
+                <p class="m-0"><a href="#"> Plated Cushion</a></p>
+                <p class="m-0"><a href="#" class="price">$ 19.99 USD</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------Product section end------->
+
+    <!-------contact section start------->
+    <section class="contact-main padding-t-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 offset-lg-1">
+            <div class="contact-content">
+              <h4>email</h4>
+              <p>support@gmail.com</p>
+            </div>
+            <div class="contact-content">
+              <h4>phone</h4>
+              <p>8000-123-456</p>
+            </div>
+            <div class="contact-content">
+              <h4>address</h4>
+              <p>
+                23 Evergreen Street, <br />
+                San Francisco, California <br />
+                USA
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="contact-content">
+              <h4>address</h4>
+              <p>
+                Drop us your message and I'll get back to you as soon as
+                possible.
+              </p>
+            </div>
+            <form class="contact-form">
+              <div class="row mt-3">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    placeholder="Your name"
+                    name="yourname"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    placeholder="Your Company"
+                    name="company"
+                  />
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col">
+                  <input
+                    type="number"
+                    class="form-control form-control-lg"
+                    placeholder="Your Phone"
+                    name="phone"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    placeholder="Your Email"
+                    name="email"
+                  />
+                </div>
+              </div>
+              <div class="mt-3">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <div class="d-grid mt-3">
+                <button class="btn btn-outline-primary" type="button">
+                  Button
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------contact section end------->
+
+    <!-- Bootsatrap bundlen js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
