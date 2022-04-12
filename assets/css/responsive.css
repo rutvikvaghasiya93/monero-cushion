@@ -1,0 +1,52 @@
+@media screen and (max-width:1199px) {
+    section.hero_section .hero-banner-slider .hero_banner .hero_img{
+        width: 65%;
+    }
+}
+@media screen and (max-width:991px) {
+    .navbar .navbar-nav .nav-item .nav-link{
+        padding: 20px;
+    }
+    .navbar .navbar-nav .nav-item .nav-link.cart_btn{
+        width: auto;
+        height: auto;
+    }
+    section.hero_section .hero-banner-slider .hero_banner .hero_img{
+        width: 100%;
+    }
+    section.hero_section .hero-banner-slider .hero_banner .hero_img img{
+        max-width: 100%;
+        min-height: auto;
+    }
+    .side_text_box{
+    width: 100%;
+    min-height: auto;
+    max-width: 100%;
+    margin-left: 0;
+    padding: 40px 30px;
+}
+.design_section.aboutme-section .design_img {
+    width: 100%;
+}
+.design_section.aboutme-section .design_img img{
+    max-width: 100%;
+    min-height: auto;
+}
+section.design_section.aboutme-section.aboutme-second .design_content .design_banner {
+    justify-content: flex-end !important;
+
+}
+.single-text-with-image:nth-child(even) .right-side-content {
+    order: 2;
+}
+.single-text-with-image:nth-child(even) .left-side-image {
+    order: 1;
+}
+.single-text-with-image:nth-child(even) .left-side-image .single-image{
+    margin: 0 0 0;
+}
+section.design_section.aboutme-section:nth-child(even) .side_text_box{
+    order: 1;
+}
+
+}

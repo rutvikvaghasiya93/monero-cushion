@@ -58,6 +58,9 @@ header{
     font-size: 24px;
     font-family: 'Cormorant Garamond', serif;
 }
+.navbar .navbar-toggler:focus{
+    box-shadow: none !important;
+}
 .cart_btn{
     width: 75px;
     height: 116px;
@@ -90,16 +93,17 @@ header{
     height: 50%;
     background-color: #9f2c75;
 }
-.hero_img{
+section.hero_section .hero-banner-slider .hero_banner .hero_img{
     position: relative;
     z-index: 99;
 }
-.hero_img img{
+section.hero_section .hero-banner-slider .hero_banner .hero_img img{
     max-width: 800px;
     min-height: 625px;
 }
 .hero_banner{
     z-index: 999;
+    width: 100%;
 }
 .side_text_box{
     display: flex;
@@ -220,10 +224,8 @@ header{
     width: 50%;
 }
 /****cushion design-section end***/
-/*****Demo section start */
-/* .text-with-image .demo-immg{
-border: 17px solid #d6bbd3;
-} */
+/*****Text with images section start */
+
 .text-with-image .single-text h4 {
     margin-bottom: 10px;
     font-family: Roboto, sans-serif;
@@ -252,12 +254,14 @@ border: 17px solid #d6bbd3;
 .single-text-with-image:nth-child(even) .left-side-image .single-image {
     margin: 0 0 0 auto;
 }
-/*****Demo section end */
+/*****Text with image section end */
+
+
 /******Product section start******/
 .product-main .product-card .product-card-text p a{
     color: #5f4d5d;
     font-weight: 500;
-    text-decoration: none
+    text-decoration: none;
 }
 .product-main .product-card .product-card-text a.price{
     font-family: Roboto, sans-serif;
@@ -293,7 +297,8 @@ border: 17px solid #d6bbd3;
     color: #fff;
     font-size: 22.5px;
     margin: 0px !important;
-    text-decoration: none
+    
+
 }
 .contact-main .contact-form .form-control{
     background: transparent;
@@ -316,3 +321,10 @@ border: 17px solid #d6bbd3;
     border-color: #ffffff;
 }
 /******contact section end******/
+.newsletter-main form .input-group .form-control{
+    padding: 1rem 1.2rem;
+    /* border-radius: 0px; */
+}
+.newsletter-main form .form-control::placeholder{
+    color: #d6bbd3 !important;
+}
