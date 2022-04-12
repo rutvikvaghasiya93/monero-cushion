@@ -45,7 +45,7 @@ section.padding-t-b{
 h4 {
     margin-bottom: 10px;
     font-family: Roboto, sans-serif;
-    color: #b99bb6;
+    color: #560238;
     font-size: 13.5px;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -101,6 +101,9 @@ header{
     right: 0;
     height: 50%;
     background-color: #9f2c75;
+}
+section.hero_section .hero-banner-slider {
+    z-index: 99;
 }
 section.hero_section .hero-banner-slider .hero_banner .hero_img{
     position: relative;
@@ -211,7 +214,7 @@ section.hero_section .hero-banner-slider .hero_banner .hero_img img{
 }
 /*****cushion design section start ****/
 .design_section{
-    background-color: #b08ead;
+    background-color: #d281b5;
     /* padding:75px 0;
      */
 }
@@ -237,7 +240,7 @@ section.hero_section .hero-banner-slider .hero_banner .hero_img img{
 
 
 .text-with-image .single-image{
-    border: 17px solid #d6bbd3;
+    border: 17px solid #560238;
     max-width: 90%;
 }
 .single-text-with-image {
@@ -281,39 +284,79 @@ section.hero_section .hero-banner-slider .hero_banner .hero_img img{
 /******Product section end******/
 /******contact section start******/
 .contact-main{
-    background-color:#d6bbd3; ;
+    background-color: #d6bbd3;
+    background-image: url(../images/demo_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.contact-main:before {
+    content: "";
+    position: absolute;
+    background-color: rgba(86, 2, 56, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.contact-main .contact-form-main {
+    background-color: #fff;
+    padding: 70px 80px;
+    border-radius: 20px;
+    max-width: 90%;
+    margin: 0 auto;    
 }
 .contact-main .contact-content {
     padding-bottom: 20px;
 }
 .contact-main .contact-content h4{
     font-family: Roboto, sans-serif;
-    color: #fff;
+    color: #560238;
     font-size: 13.5px;
     font-weight: 700;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
 .contact-main .contact-content p{
-    color: #fff;
+    color: #560238;
     font-size: 22.5px;
     margin: 0px !important;
 }
-.contact-main .contact-form .form-control{
+.contact-main .contact-form .form-control {
     background: transparent;
     border-radius: 0px !important;
-    border: 1px solid white;
+    border: 1px solid #560238;
+}
+.contact-main .contact-form .form-control::placeholder {
+    color: #560238;
 }
 .contact-main .contact-form  .form-control:focus{
     box-shadow: none !important;
     border-color: #560238;
 }
-::placeholder{
-    color: #ffffff !important;
-}
 .contact-main .contact-form .btn{
     width: 100%;
-    border-radius: 0px !important;
+    /* border-radius: 0px !important; */
+    color: #560238;
+    border-color: #560238;
+
+
+    padding: 15px 50px;
+    border: 1px solid #560238;
+    border-radius: 25px;
+    background-color: #560238;
+    -webkit-transition: background-color 200ms ease, color 200ms ease;
+    transition: background-color 200ms ease, color 200ms ease;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 15px;
 }
 .btn-outline-primary{
     color: #fff;
