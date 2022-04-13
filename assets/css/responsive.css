@@ -92,6 +92,15 @@
         padding: 0;
     }
 }
+@media screen and (max-width: 767px) {
+    .inner-banner .banner-title {
+        width: 100%;
+        text-align: center;
+    }
+    .inner-banner .banner-title h3 {
+        font-size: 55px;
+    }
+}
 @media screen and (max-width: 480px) {
     .newsletter-main .input-group input.form-control, .newsletter-main .input-group button.btn {
         width: 100%;
