@@ -6,7 +6,7 @@
 body {
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Cormorant Garamond', sans-serif;
-    color: #5f4d5d;
+    color: #051747;
     font-size: 24px;
     line-height: 30px;
 }
@@ -27,7 +27,7 @@ body {
     background-color: #051747;
     -webkit-transition: background-color 200ms ease, color 200ms ease;
     transition: background-color 200ms ease, color 200ms ease;
-    color: #ffffff;
+    color: #ffffff !important;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -454,6 +454,7 @@ section.hero_section .hero-banner-slider .hero_banner .hero_img img{
 }
 .prek-main .prek-inner .prek-icon svg {
     width: 50px;
+    height: 50px;
 }
 .prek-main .prek-inner .prek-icon svg g path {
     fill: #051747;
@@ -553,4 +554,108 @@ footer .footer-notice .footer-notice-text a.notice-text-link{
 .inner-banner .banner-title h3 {
     font-size: 65px;
     color: #fff;
+}
+
+.product-detail {
+    position: sticky;
+    top: 0;
+}
+.details-inner .price .stars i {
+    color: #f8b101;
+}
+.quantity-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.quantity-button .plus-minus-input {
+    max-width: 160px;
+    border: 2px solid #000;
+    padding: 10px 10px;
+    justify-content: center;
+    border-radius: 50px;
+}
+.quantity-button .plus-minus-input .input-group-button {
+    width: 30px;
+}
+.quantity-button .plus-minus-input .input-group-button button {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 30px;
+    background: transparent;
+    border: 0;
+}
+.quantity-button .plus-minus-input .input-group-button button i {
+    font-size: 15px;
+}
+.quantity-button .plus-minus-input .input-group-field {
+    width: 100%;
+    max-width: calc(100% - 80px);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+}  
+.plus-minus-input .input-group-field {
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 1rem;
+}
+  
+.plus-minus-input .input-group-field::-webkit-inner-spin-button,
+.plus-minus-input .input-group-field ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+            appearance: none;
+}
+.add-to-cart-button {
+    width: 100%;
+    max-width: calc(100% - 160px);
+    padding-left: 20px;
+}
+.add-to-cart-button button {
+    width: 100%;
+    min-height: 54px;
+    font-size: 19px;
+}
+.product-detail .price p {
+    font-size: 25px;
+    line-height: normal;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+}
+.product-thumb-image .slick-slide {
+    padding: 10px;
+}
+.product-thumb-image .slick-current .single-image {
+    border: 2px solid #051747;
+}
+
+.product-tab h2.accordion-header button.accordion-button {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    background: #535f80;
+}
+.product-tab h2.accordion-header button.accordion-button:after {
+    content: "\f107";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display,inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    font-family: var(--fa-style-family,"Font Awesome 6 Free");
+    font-weight: var(--fa-style,900);
+    background-image: none;
+}
+.product-tab h2.accordion-header button.accordion-button.collapsed {
+    background-color: #f2f2f3;
+    color: #051747;
 }
