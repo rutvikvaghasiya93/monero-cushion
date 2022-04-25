@@ -54,8 +54,12 @@ h4 {
 /******header start******/
 
 header{
-    position: relative;
+    position: sticky;
+    top: 0;
     border-top: 4px solid #535f80;
+    background-color: #fff;
+    z-index: 999;
+
 }
 
 .navbar-brand img{
@@ -98,6 +102,87 @@ header{
     width: 19px;
 }
 /******header end******/
+
+section.add-to-cart-drawer {
+    position: fixed;
+    /* right: 0; */
+    top: 0;
+    width: 500px;
+    z-index: 9999;
+    background: #fff;
+    height: 100%;
+    padding: 20px 20px;
+    right: -530px;
+    transition: 0.5s all;
+    box-shadow: 0px 0px 20px 2px #051747;
+}
+section.add-to-cart-drawer.open-drawer {
+    right: 0;
+}
+.add-to-cart-drawer .product-image-wrapper img {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 5px;
+}
+.add-to-cart-drawer .quantity-button .plus-minus-input {
+    max-width: 110px;
+    border: 1px solid #000;
+    padding: 3px 0px;
+    border-radius: 10px;
+}
+.add-to-cart-drawer .quantity-button .plus-minus-input .input-group-button button i {
+    font-size: 12px;
+}
+.add-to-cart-drawer .quantity-button .plus-minus-input .input-group-field {
+    font-size: 13px;
+}
+.cart-product-list .single-product .cart-product-detail {
+    flex: 0 0 100%;
+    max-width: calc(100% - 100px);
+}
+.cart-product-list .single-product .cart-product-detail h3 {
+    font-size: 19px;
+    margin-bottom: 0;
+}
+.cart-product-list .single-product .cart-product-detail .price p {
+    margin-bottom: 0;
+}
+.cart-product-list .single-product .price p span.cart-remove {
+    display: block;
+    line-height: 15px;
+}
+.cart-product-list .single-product .price p span.cart-remove a {
+    font-size: 13px;
+    color: #828797;
+    text-decoration: underline;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.cart-product-list .cart-list-inner {
+    height: calc(100vh - 210px);
+    overflow: auto;
+}
+.subtotatal {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    transition: 0.5s all;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.modal-overlay.active-modal-overlay {
+    opacity: 1;
+    visibility: visible;
+}
 /******Hero secrtion start */
 .hero_section{
     position: relative;
